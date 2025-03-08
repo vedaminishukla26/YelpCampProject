@@ -63,12 +63,6 @@ app.delete('/campgrounds/:id', async (req,res) => {
     res.redirect( '/campgrounds');
 })
 
-// app.get('/makecampground', async (req,res) => {
-//     const camp = new Campground({title:'My Backyard', description:'cheap camping!' });
-//     await camp.save();
-//     res.send(camp);
-// }) removed by colt 
-
 app.listen(3000, () => {
     console.log('Serving on port 3000')
 })
